@@ -1,7 +1,9 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = '-'
- 
+const figlet = require("figlet");
+
+
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 client.user.setGame(`-help`,"http://twitch.tv/S-F")
